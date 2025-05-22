@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma_Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .Best_tarot {
+            max-height: 100px;
+            background-image: url('Best_Tarot.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            transform: translateY(30px);
+        }
+
+        nav ul li:hover {
+            /* border: 2px solid black; */
+
+            border-radius: 10px;
+            transition: 2s;
+            background: slateblue;
+            /* padding: auto; */
+        }
+
+        .sky {
+            min-height: 500px;
+            background-image: url('sky.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .Card {
+            min-height: 400px;
+            background-image: url('Card.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+
+
+
+        }
+
+        .Rangoli {
+            min-height: 500px;
+            background-image: url('Rangoli.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* position: relative; */
+        }
+
+        .lahar {
+            min-height: 70px;
+            background-image: url('lahar.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            transform: translateY(1px);
+        }
+
+        .cardbackground {
+            min-height: auto;
+            background-image: url('cardimage.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+        }
+
+        .decurationbar {
+            min-height: 60px;
+            background-image: url('decoradion_bar.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .pic1 {
+            background-image: url('mypic.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .card-high {
+            height: 290px;
+            background: black;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+
+
+        }
+
+        .card-img {
+            height: 250px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 100% 100%;
+
+
+        }
+
+
+        /* our customer */
+        .testimonial-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+        }
+
+        .testimonial-card .card-body {
+            padding: 15px;
+        }
+
+        .testimonial-card .card-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-card .card-text {
+            margin-bottom: 15px;
+        }
+
+        .stats {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .customer1 {
+            min-height: 500px;
+            background-image: url('transparent_img.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+
+        }
+
+        .blue {
+            min-height: 730px;
+            background-image: url('Rectangle 1737.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .lahar2 {
+            height: 70px;
+            background-image: url('shape.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            transform: translateY(10px);
+        }
+
+        .stars {
+            min-height: 400px;
+            background-image: url('Stars_img.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* transform: translateY(1px); */
+
+        }
+
+
+        .grah {
+            min-height: 200px;
+            background-image: url('grah_image.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        .enquiry {
+            min-height: 500px;
+            background-image: url('image 11.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        .custom-form {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: none;
+        }
+
+        /* latest Articals */
+        .blog-post {
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .blog-post .content {
+            padding: 15px;
+        }
+
+        .blog-post .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .blog-post .author span {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .blog-post .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .blog-post .description {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .lahar3 {
+            height: 70px;
+            background-image: url('shape (1).png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            transform: translateY(2px);
+        }
+
+        /* Footer */
+        .footer_img {
+            min-height: 400px;
+            background-image: url('Rectangle 1787.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .footer_img1 {
+            min-height: 400px;
+            background-image: url('Rectangle 1788.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        .btn-submit {
+            background-color: #FFA500;
+            border: none;
+            color: white;
+        }
+
+        .btn {
+
+            border-radius: 25px;
+            min-width: 100px;
+
+        }
+
+        .line {
+            height: 2px;
+            background-image: url('Line 15.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .footer {
+
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .newsletter input[type="email"] {
+            width: 80%;
+            padding: 10px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .footer .newsletter button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #ff7f50;
+            color: white;
+        }
+
+        .ftlogo {
+            height: 50px;
+            width: 150px;
+            background-image: url('image 12.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- start header -->
+    <div class="container-fluid">
+        <div class="row bg-dark text-light text-center p-1 justify-content-center">
+            <div class="col-md-2 col-sm-4 p-2 d-flex flex-wrap">
+                <ion-icon name="headset-outline" style="width: 40px; height: 40px;"></ion-icon>
+                <p class="ms-2">24x7 Support<br>info@besttarot.com</p>
+            </div>
+            <div class="col-md-2 col-sm-4 text-center p-2 d-flex flex-wrap">
+                <ion-icon name="call-outline" style="width: 40px; height: 40px;"></ion-icon>
+                <p class="ms-2">Contact Us Free<br>+91-895 548 6258</p>
+            </div>
+            <div class="col-md-3 Best_tarot"></div>
+            <div class="col-md-5 d-flex justify-content-center flex-wrap">
+                <div class="dropdown mt-3">
+                    <div class="btn btn-dark btn-sm dropdown-toggle fs-5" type="button" data-bs-toggle="dropdown">
+                        <ion-icon name="language-outline" style="width: 30px; height: 30px;"></ion-icon> Eng
+                    </div>
+                    <div class="dropdown-menu bg-light fw-bold">
+                        <button class="dropdown-item">English</button>
+                        <button class="dropdown-item">Hindi</button>
+                    </div>
+                </div>
+                <div class="mx-2 d-flex align-items-center">
+                    <ion-icon name="log-in-outline" style="width: 30px; height: 30px;"></ion-icon>
+                    <a class="link-light ms-1" href="#">Login</a>
+                </div>
+                <div class="mx-2 d-flex align-items-center">
+                    <a href="#" class="text-light">Wallet</a>
+                    <ion-icon name="wallet" class="text-warning ms-1" style="width: 30px; height: 30px;">0.00</ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="background: #f3701e; height: 5px;"></div>
+    </div>
+    <!-- end header -->
+
+
+    <!-- Start Nav Menu -->
+   <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fw-bold">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav text-center text-lg-start">
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link active" href="#">About Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown px-lg-4">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Prediction Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link active" href="#">Course</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link active" href="#">Blogging</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link active" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link active" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+    <!-- end nav menu -->
+
+    <!-- Start Contect -->
+    <div class="container-fluid sky">
+        <div class="row justify-content-center align-items-center">
+            <!-- Text Section -->
+            <div class="col-lg-6 col-md-8 col-sm-10 text-light text-center text-md-start">
+                <p class="fs-1 ms-md-5">Trust our experience</p>
+                <strong class="ms-md-5" style="font-size: 50px;">Start control of your</strong>
+                <p class="ms-md-5" style="font-size: 45px;">professional destiny</p>
+                <p class="ms-md-5">
+                    It is a long-established fact that a reader will be distracted by the readable content
+                    of a page when looking at its layout. The point of using Lorem Ipsum.
+                </p>
+                <button type="button" class="btn btn-light ms-md-5 btn-lg p-2" style="border-radius: 30px;">
+                    Book Appointment
+                </button>
+            </div>
+
+            <!-- Card Section -->
+            <div class="col-lg-6 col-md-8 col-sm-10 text-center">
+                <div class="Card me-md-5"></div>
+            </div>
+        </div>
+
+        <!-- Lahar Image -->
+        <div class="row lahar mt-5"></div>
+    </div>
+
+    <!-- Start Card image -->
+    <div class="container-fluid cardbackground">
+        <div class="col-sm-12 text-center fw-bold ">
+            <p style="font-size: 60px;">Top Rated Tarot Card Reader</p>
+        </div>
+        <div class="col-sm-12 text-center text-dark">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page<br> when
+                looking at its layout. The point of using Lorem Ipsum</p>
+        </div>
+
+        <div class="col-sm-3 decurationbar m-auto mb-5"></div>
+
+
+        <!--Start card Itmes  -->
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <!-- card 1 -->
+            <div class=" col-sm-2 mt-5">
+                <div class="card"
+                    style="border-radius: 20px; border:5px solid skyblue; box-shadow: 2px 3px 9px 2px gray; min-height: 400px;">
+                    <img src="image 1.png" class="bd-placeholder-img rounded-circle m-auto " width="160" height="150"
+                        alt="Vaibhav Valmiki" style="transform: translateY(-50px);">
+                    <div class="card-body text-center ">
+                        <h5 class="card-title">Vaibhav Valmiki</h5>
+                        <p class="card-text">Exp: 15 years</p>
+                        <p class="card-text">❤️Spiritual<br>
+                            Advisor & Relationships Expert❤️ No sugar-<br>
+                        </p>
+                        <p><a class="btn btn-secondary mt-2" href="#" style="background: rgb(114, 94, 203);">Chat
+                                Now</a>
+                            <i class="ms-3 fs-5">$2/min</i>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class=" col-sm-2 mt-5">
+                <div class="card"
+                    style="border-radius: 20px; border:5px solid skyblue; box-shadow: 2px 3px 9px 2px gray; min-height: 400px;">
+                    <img src="image 2.png" class="bd-placeholder-img rounded-circle m-auto " width="160" height="150"
+                        alt="Vaibhav Valmiki" style="transform: translateY(-50px);">
+                    <div class="card-body text-center ">
+                        <h5 class="card-title">Vaibhav Valmiki</h5>
+                        <p class="card-text">Exp: 15 years</p>
+                        <p class="card-text">LOVE & LIFE - Honest answers Intuitive psychic life coach</p>
+                        <p><a class="btn btn-secondary mt-2" href="#" style="background: rgb(114, 94, 203);">Chat
+                                Now</a>
+                            <i class="ms-3 fs-5">$2/min</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card 3 -->
+            <div class=" col-sm-2 mt-5">
+                <div class="card"
+                    style="border-radius: 20px; border:5px solid skyblue; box-shadow: 2px 3px 9px 2px gray;  min-height: 400px;">
+                    <img src="image 3.png" class="bd-placeholder-img rounded-circle m-auto " width="160" height="150"
+                        alt="Vaibhav Valmiki" style="transform: translateY(-50px);">
+                    <div class="card-body text-center ">
+                        <h5 class="card-title">Rosslyn</h5>
+                        <p class="card-text">Exp: 15 years</p>
+                        <p class="card-text">Reliable, Honest and Accurate Psychic/ Empath/Life Coach</p>
+                        <p><a class="btn btn-secondary mt-2" href="#" style="background: rgb(114, 94, 203);">Chat
+                                Now</a> <i class="ms-3 fs-5">$2/min</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class=" col-sm-2 mt-5">
+                <div class="card"
+                    style="border-radius: 20px; border:5px solid skyblue; box-shadow: 2px 3px 9px 2px gray;  min-height: 400px;">
+                    <img src="image 4.png" class="bd-placeholder-img rounded-circle m-auto " width="160" height="150"
+                        alt="Vaibhav Valmiki" style="transform: translateY(-50px);">
+                    <div class="card-body text-center ">
+                        <h5 class="card-title">Jennifer</h5>
+                        <p class="card-text">Exp: 15 years</p>
+                        <p class="card-text">I offer spiritual predictions & guidance via angelic support</p>
+                        <p><a class="btn btn-secondary mt-2" href="#" style="background: rgb(114, 94, 203);">Chat
+                                Now</a>
+                            <i class="ms-3 fs-5">$2/min</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class=" col-sm-2 mt-5">
+                <div class="card"
+                    style="border-radius: 20px; border:5px solid skyblue; box-shadow: 2px 3px 9px 2px gray;  min-height: 400px;">
+                    <img src="image 5.png" class="bd-placeholder-img rounded-circle m-auto " width="160" height="150"
+                        alt="Vaibhav Valmiki" style="transform: translateY(-50px);">
+                    <div class="card-body text-center ">
+                        <h5 class="card-title">Akhilesh Pandey</h5>
+                        <p class="card-text">Exp: 15 years</p>
+                        <p class="card-text">Reliable, Honest and Accurative Psycchic /Empath/Life Coach </p>
+                        <p><a class="btn btn-secondary mt-2" href="#" style="background: rgb(114, 94, 203);">Chat
+                                Now</a>
+                            <i class="ms-3 fs-5">$2/min</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Services  Heading-->
+        <div class="row  ">
+            <div class="col-sm-12 text-center fs-1 mt-3"><b>Our Services</b></div>
+            <div class="col-sm-3 decurationbar m-auto mb-3"></div>
+            <div class="col-sm-12 text-center  ">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a
+                    page<br> when
+                    looking at its layout will be distracted by the readable content. The point of using Lorem
+                    Ipsum
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Our Services card Itmes -->
+
+        <div class="row justify-content-center text-light ">
+            <div class="col-sm-1"></div>
+            <!-- card 1 -->
+            <div class="col-sm-3 mb-3">
+                <div class="card-high" style="background: #f3701e;">
+                    <img src="Rectangle 1775.png" class="card-img " alt="Psychic Reading">
+
+                    <h5 class="text-center mb-3 p-2">Tarot Card Reading</h5>
+
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-sm-3 mb-3">
+                <div class="card-high" style="background: #f3701e;">
+                    <img src="Mask Group 78.png" class="card-img " alt="Psychic Reading">
+
+                    <h5 class="text-center mb-3 p-2">Psychic Reading</h5>
+
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-sm-3 mb-3">
+                <div class="card-high" style="background: #f3701e;">
+                    <img src="Rectangle 1776.png" class="card-img " alt="Psychic Reading">
+
+                    <h5 class="text-center mb-3 p-2">Our Services</h5>
+
+                </div>
+            </div>
+
+            <div class=" col-sm-1"></div>
+        </div>
+        <!-- card 4 -->
+        <div class="row justify-content-center text-light ">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 mb-3">
+                <div class="card-high" style="background: #f3701e;">
+                    <img src="Rectangle 1777.png" class="card-img " alt="Psychic Reading">
+
+                    <h5 class="text-center mb-3  p-2">Dream Analysis </h5>
+
+                </div>
+            </div>
+
+            <!-- card 5 -->
+            <div class="col-sm-3 mb-3">
+                <div class="card-high" style="background: #f3701e;">
+                    <img src="Rectangle 1778.png" class="card-img " alt="Psychic Reading">
+
+                    <h5 class="text-center mb-3 p-2">Career Forecasts</h5>
+
+                </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="col-sm-3 mb-3">
+                <div class="card-high" style="background: #f3701e;">
+                    <img src="Rectangle 1779.png" class="card-img " alt="Psychic Reading">
+
+                    <h5 class="text-center mb-3 p-2"> Love Psychics</h5>
+
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+    </div>
+    <!-- end  cardbackground-->
+
+
+    <!-- Start  Our Customer Says -->
+    <div class="container-fluid py-3 customer1">
+        <div class="row justify-content-center text-light text-center">
+            <!-- Title Section -->
+            <div class="col-lg-6 col-md-8 col-sm-10 mt-5">
+                <h2 class="fs-1 fw-bold">What's Our Customer Says</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Industry's standard dummy text ever since the 1500s.</p>
+            </div>
+
+            <!-- Stats Image -->
+            <div class="col-lg-6 col-md-8 col-sm-10 mt-5 text-center">
+                <img src="Group 25330.png" alt="84% image" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+
+        <!-- Testimonial Cards -->
+        <div class="row justify-content-center mt-4">
+            <!-- Card 1 -->
+            <div class="col-lg-3 col-md-6 col-sm-10 mb-4">
+                <div class="card testimonial-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold mt-3">Quality Of Service</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <p class="card-text mt-3">
+                            <img src="Group 2126.png" alt="Maad Sa'ati" style="height: 60px; width: 60px;">
+                            <strong>Maad Sa'ati</strong><br>CEO
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-3 col-md-6 col-sm-10 mb-4">
+                <div class="card testimonial-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold mt-3">About Customer Satisfaction</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <p class="card-text mt-3">
+                            <img src="Group 2126 (1).png" alt="Marcie Amanda" style="height: 60px; width: 60px;">
+                            <strong>Marcie Amanda</strong><br>CMO
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-3 col-md-6 col-sm-10 mb-4">
+                <div class="card testimonial-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold mt-3">Empowering Our Staff</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                        <p class="card-text mt-3">
+                            <img src="Group 1979.png" alt="Gilbert Luis" style="height: 60px; width: 60px;">
+                            <strong>Gilbert Luis</strong><br>Accountant
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Our Customer Says -->
+
+
+
+
+    <!-- start Horoscope Forecasts-->
+    <div class="container-fluid blue ">
+        <h2 class="text-center fw-bold py-3">Horoscope Forecasts</h2>
+        <p class="text-center">It is a long established fact that a reader will be distracted by the readable
+            content of a page<br> when looking at its layout. The point of using Lorem lpsum.Check out your daily
+            horoscope forecast for each zodiac sign!</p>
+        <div class="row justify-content-center mt-4 ">
+            <!-- card 1 -->
+            <div class="col-sm-2 mb-2 ">
+                <div class="card p-3 shadow">
+                    <img src="Group 126.png" class="card-img-top" alt="Aries">
+
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-sm-2 mb-2">
+                <div class="card p-3 shadow">
+                    <img src="Group 134.png" class="card-img-top" alt="Aries">
+
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-sm-2 mb-2">
+                <div class="card p-3 shadow">
+                    <img src="Group 135.png" class="card-img-top" alt="Aries">
+
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="col-sm-2 mb-2">
+                <div class="card p-3 shadow">
+                    <img src="Group 136.png" class="card-img-top" alt="Aries">
+
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="col-sm-2 mb-">
+                <div class="card p-3 shadow">
+                    <img src="Group 137.png" class="card-img-top" alt="Aries">
+
+                </div>
+            </div>
+        </div>
+        <!-- card 6 -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-sm-2 mb-2">
+                <div class="card p-3 shadow">
+                    <img src="Group 138.png" class="card-img-top" alt="Aries">
+
+                </div>
+            </div>
+            <!-- card 7 -->
+            <div class="col-sm-2 mb-2">
+                <div class="card p-3 shadow">
+                    <img src="Group 139.png" class="card-img-top" alt="Aries">
+
+                </div>
+            </div>
+            <!-- card 8 -->
+            <div class="col-sm-2 mb-2">
+                <div class="card  shadow">
+                    <img src="libra.png" class="card-img-top" alt="Aries">
+                </div>
+            </div>
+            <!-- card 9 -->
+            <div class="col-sm-2 mb-2">
+                <div class="card p-3 shadow">
+                    <img src="Group 141.png" class="card-img-top" alt="Aries">
+
+                </div>
+            </div>
+            <!-- card 10 -->
+            <div class="col-sm-2 mb-2">
+                <div class="card p-3 shadow">
+                    <img src="Group 142.png" class="card-img-top" alt="Aries">
+
+                </div>
+            </div>
+        </div>
+        <!-- lahar Image 2-->
+        <div class="row lahar2 mt-4"></div>
+
+    </div>
+
+    <!-- start Why Choose Us -->
+    <div class="container-fluid stars text-light">
+        <h2 class="text-center fw-bold mt-1">Why Choose US</h2>
+        <p class="text-center">It is a long established fact that a reader will be distracted by the readable
+            content of a page<br> when looking at its layout. The point of using Lorem lpsum.Check out your daily
+            horoscope forecast for each zodiac sign!</p>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-sm-10 grah justify-content-center mb-5"></div>
+        </div>
+
+    </div>
+
+    <!-- Start Enquiry -->
+    <div class="container-fluid enquiry">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="custom-form ">
+                    <p class="fw-bold fs-1 text-light">Raise a <br>Enquiry</p>
+                    <form>
+                        <div class="form-group mt-2">
+                            <!-- <label for="firstName"> Name</label> -->
+                            <input type="text" class="form-control" id="firstName" placeholder="Name">
+                        </div>
+                        <div class="form-group mt-2">
+                            <!-- <label for="lastName">Mobie No.</label> -->
+                            <input type="text" class="form-control" id="lastName" placeholder="Mobile No.">
+                        </div>
+                        <div class="form-group mt-2">
+                            <!-- <label for="email">Email address</label> -->
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group mt-2">
+
+                            <textarea class="form-control" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button type="submit" class="btn btn-dark mt-3 col-sm-5"
+                                style="background: #f3701e;">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Strat Latest Articals -->
+    <div class="container-fluid">
+        <p class="text-center fw-bold fs-1">Latest-Articals</p>
+        <p class="text-center">It is a long established fact that a reader will be distracted by the readable
+            content of a page<br> when looking at its layout. The point of using Lorem lpsum.Check out your daily
+            horoscope forecast for each zodiac sign!</p>
+
+        <div class="col-sm-3 decurationbar m-auto mb-3"></div>
+
+        <div class="row text-center justify-content-center p-3">
+            <div class="col-sm-3 blog-post ms-3">
+                <img src="Rectangle 1784.png" alt="Blog Post 1">
+                <div class="content">
+                    <div class="author">
+                        <span>By Admin</span>
+                        <span class="ml-auto">0 comments</span>
+                    </div>
+                    <div class="title">Consectetur Adipiscing Elit Sedeius Mod Tempor Incididunt Ut Labore.</div>
+                    <div class="description">Consectetur adipiscing elit, sed desdo<br> eiusmod tempor
+                        incididuesdeentiut labore<br> etesde doloesire esdsedeges magna <br>aliquapspendisse and the
+                        gravida.</div>
+                </div>
+            </div>
+            <div class="col-sm-3 blog-post ms-3">
+                <img src="Rectangle 1785.png" alt="Blog Post 2">
+                <div class="content">
+                    <div class="author">
+                        <span>By Admin</span>
+                        <span class="ml-auto">0 comments</span>
+                    </div>
+                    <div class="title">Consectetur Adipiscing Elit Sedeius Mod Tempor Incididunt Ut Labore.</div>
+                    <div class="description">Consectetur adipiscing elit, sed desdo<br> eiusmod tempor
+                        incididuesdeentiut labore<br> etesde doloesire esdsedeges magna <br>aliquapspendisse and the
+                        gravida.</div>
+                </div>
+            </div>
+            <div class="col-sm-3 blog-post ms-3">
+                <img src="Rectangle 1786.png" alt="Blog Post 3">
+                <div class="content">
+                    <div class="author">
+                        <span>By Admin</span>
+                        <span class="ml-auto">0 comments</span>
+                    </div>
+                    <div class="title">Consectetur Adipiscing Elit Sedeius Mod Tempor Incididunt Ut Labore.</div>
+                    <div class="description">Consectetur adipiscing elit, sed desdo<br> eiusmod tempor
+                        incididuesdeentiut labore<br> etesde doloesire esdsedeges magna<br> aliquapspendisse and the
+                        gravida.</div>
+                </div>
+            </div> 
+        </div>
+        <!-- lahar image 3 -->
+        <div class="row lahar3"></div>
+    </div>
+
+
+    <!-- Start Footer -->
+    <div class="container-fluid footer_img">
+        <div class="row footer_img1 justify-content-center">
+            <div class="col-sm-4 text-light ">
+                <p class="fw-bold fs-1 text-light mt-5">Zodiac Sign Finder</p>
+            </div>
+            <div class="col-sm-6 mt-5">
+                <form>
+                    <div class="btn btn-lg btn-light fw-bold  ">
+                        <select class="  btn btn-sm ">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="btn btn-lg btn-light fw-bold ">
+                        <select class="  btn btn-sm ">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="btn btn-lg btn-light  ">
+                        <select class="  btn btn-sm">
+                            <option>1994</option>
+                            <option>1995</option>
+                            <option>2001</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit  btn-lg">Submit</button>
+
+            </div>
+
+            <!--End Line -->
+            <p class="row col-sm-10 line"></p>
+
+            <!-- Footer Content -->
+            <div class="row text-light justify-content-center footer">
+                <div class="col-sm-3">
+                    <p class="ftlogo "></p>
+                    <p>There are many variations of this passages of Lorem Ipsum.</p>
+                    <ul class="list-unstyled">
+                        <li><ion-icon name="location-outline"></ion-icon> NY 10018, California, USA</li>
+                        <li><ion-icon name="call-outline"></ion-icon> + (91) 1800-124-105</li>
+                        <li><ion-icon name="mail-open-outline"></ion-icon> astrology@example.com</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 mt-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-styled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Astrologers</a></li>
+                        <li><a href="#">Appointment</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 mt-3">
+                    <h5>Horoscope Forecasts</h5>
+                    <ul class="list-styled">
+                        <li><a href="#">My Daily Horoscope</a></li>
+                        <li><a href="#">My Weekly Horoscope</a></li>
+                        <li><a href="#">My Monthly Horoscope</a></li>
+                        <li><a href="#">My Love Horoscope</a></li>
+                        <li><a href="#">My Career Horoscope</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 mt-3">
+                    <h5>Our Newsletter</h5>
+                    <p>Lorem ipsum dolor amet, consectetur<br> adipiscing elit, sed eiusmod tempor.</p>
+                    <form class="newsletter">
+                        <input type="email" class="p-1" placeholder="Email..." style="border-radius: 20px;">
+                        <button type="submit"></button>
+                    </form>
+                    <div class="mt-3">
+                        <input type="checkbox" class="m-2 " id="agree"
+                            style="background: none; height: 30px; width: 20px; ">
+                        <label for="agree">I agree that my submitted data is <br>being collected and stored.</label>
+                    </div>
+                </div>
+
+                <!--End Line -->
+                <p class="row col-sm-10 line"></p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
